@@ -1,0 +1,84 @@
+<!--"Balihang Rai, 000925041 certify that this material is my original work. No other person's work has been used without due acknowledgement. I have not made my work available to anyone else."    -->
+<html> 
+<head>
+<title>Map Application</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<script src="script.js" defer>
+
+</script>
+      
+</head>
+<body>
+       <div class="container text-center mt-5">
+<h1>Map of Hamilton</h1>
+
+       </div>
+   <div class="container">
+        <div class="row justify-content-center">
+            <div id="map" class="mt-4 d-block" style="height: 500px; width: 70%; margin-bottom: 20px;"></div>
+        </div>
+    </div>
+      <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYGlarD47jSahFcOfw-JEWl5olvgBgVk8&loading=async&callback=initMap&libraries=marker">
+    </script>
+     <div class="row">
+            <div class="col-md-6 col-sm-12 text-center">
+                <h3>Find your location</h3>
+                <button id="findLocation" class="btn btn-primary">Click Me</button>
+               
+            </div>
+            <div class="col-md-6 col-sm-12 text-center">
+                <h3>Search for a Address </h3>
+                <input type="text" id="location-input" class="form-control" placeholder="Enter a Address">
+                <button id="searchLocation" class="btn btn-primary mt-2">Search</button>
+            </div>
+
+
+             </div>
+    <div class="container text-center mt-5">
+            <h3>Search for different type of Ice Rinks</h3>
+            <button id="indoor" class="btn btn-primary">Indoor Ice Rinks</button>
+            <button id="outdoor" class="btn btn-primary">Outdoor Ice Rinks</button>
+             <button id="bothRinks" class="btn btn-primary">Both Ice Rinks</button>
+             <button id="removeRinks"class="btn btn-primary">Remove</button>
+        </div>
+        <div class="container mt-5 mb-5">
+            <div class="row">
+                <div class="col-md-6 col-sm-12 text-center">
+                    <h4> 
+                        Display Museums
+                    
+                    </h4>
+                          <button id="findMuseum" class="btn btn-primary">Find Museums</button>
+                </div>
+                <div class="col-md-6 col-sm-12 text-center">
+                    <h4>
+
+                        Display Waterfalls
+                          
+                    </h4>
+                    <button id="findWaterfall" class="btn btn-primary">Find Waterfalls</button>
+                </div>
+            </div>
+        </div>
+        <div class="container text-center">
+            <h4>Remove Markers</h4>
+               <button id="removeMarkers" class="btn btn-primary"> Remove Markers </button>
+        </div>
+        
+        <div class="container text-center mt-5 p-5">
+            <h4>Direction</h4>
+             <select name="dir" id="dir" class="form-select mt-3  ">
+                    <option value="None" id="addNone" >None</option>
+                    <option value="dir1" id="bay">Bayfront Park - Gore Park</option>
+                    <option value="dir2" id="gore">Gore Park - Dundurn Park</option>
+                    <option value="dir3" id="mac">Dundurn Park - Sam Lawrence Park</option>
+                </select>
+         
+            
+        </div>
+
+
+
+</body>
+</html>
